@@ -1,6 +1,6 @@
 
 export default function Comprender() {
   return (
-    <div>p</div>
+    <div>Comprender</div>
   );
 }

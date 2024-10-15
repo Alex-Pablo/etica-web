@@ -1,11 +1,13 @@
+"use client";
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
 import { ChevronDownIcon, Home, Menu, Laugh, BookCheck, BookUser, Columns4 } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import * as React from "react";
-
+import { motion } from "framer-motion"
 type Menu = {
   label: string
   name: string
@@ -21,6 +23,8 @@ type Submenu = {
 }
 
 export function SidebarMenu() {
+  const pathname = usePathname();
+
   const menus: Menu[] = [
     {
       label: "",
@@ -79,18 +83,34 @@ export function SidebarMenu() {
                     >
                       <AccordionItem value="item-1" className="m-0 p-0 font-normal">
                         <AccordionTrigger>
-                          <a key={menu.name} className="w-full flex justify-start text-xs font-normal h-10 bg-background my-2 items-center p-4 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-background rounded-md">
-                            <div className={cn("flex justify-between w-full [&[data-state=open]>svg]:rotate-180")}>
+                          <motion.div
+                            drag
+                            dragConstraints={{
+                              top: -50,
+                              left: -50,
+                              right: -50,
+                              bottom: -50.
+
+                            }}
+                            className={cn(
+                              "w-full flex justify-start text-xs font-normal h-10 bg-background my-2 items-center p-4 hover:bg-gray-200 hover:text-black rounded-md",
+                              pathname === menu.href && "bg-black text-white hover:bg-black hover:text-white"
+                            )}>
+                            <div className="flex justify-between w-full [&[data-state=open]>svg]:rotate-180">
                               <div className="flex">
                                 <div className="w-6">{menu.icon}</div>
+                                {menu.name}
                               </div>
                               <ChevronDownIcon className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" />
                             </div>
-                          </a>
+                          </motion.div>
                         </AccordionTrigger>
                         <AccordionContent>
                           {menu.submenu.map((submenu) => (
-                            <Link key={submenu.name} href={submenu.href} className="text-gray-400 mt-0 mb-0 flex text-xs h-10 bg-white dark:bg-background dark:hover:bg-primary dark:hover:text-background my-2 items-center p-4 hover:bg-primary hover:text-white rounded-md">
+                            <Link key={submenu.name} href={submenu.href} className={cn(
+                              "text-gray-400 mt-0 mb-0 flex text-xs h-10 bg-white my-2 items-center p-4 hover:bg-gray-200 hover:text-black rounded-md",
+                              pathname === submenu.href && "bg-black text-white hover:bg-black hover:text-white"
+                            )}>
                               <div className="w-6">{submenu.icon}</div>
                               {submenu.name}
                             </Link>
@@ -99,12 +119,13 @@ export function SidebarMenu() {
                       </AccordionItem>
                     </Accordion>
                   ) : (
-                    <div key={menu.name}>
-                      <Link href={menu.href} className="flex text-xs h-10 bg-white dark:bg-background my-2 items-center p-4 hover:bg-primary dark:hover:bg-primary dark:hover:text-background hover:text-white rounded-md">
-                        <div className="w-6">{menu.icon}</div>
-                        {menu.name}
-                      </Link>
-                    </div>
+                    <Link href={menu.href} className={cn(
+                      "flex text-xs h-10 bg-white my-2 items-center p-4 hover:bg-gray-200 hover:text-black rounded-md",
+                      pathname === menu.href && "bg-black text-white hover:bg-black hover:text-white"
+                    )}>
+                      <div className="w-6">{menu.icon}</div>
+                      {menu.name}
+                    </Link>
                   )}
                 </React.Fragment>
               ))}
