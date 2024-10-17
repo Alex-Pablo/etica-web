@@ -3,7 +3,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
-import { ChevronDownIcon, Home, Menu, Laugh, BookCheck, BookUser, Columns4 } from "lucide-react";
+import { ChevronDownIcon, Home, Menu, Laugh, BookCheck, BookUser, Columns4, CircleUser, User, Book, PersonStanding } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import * as React from "react";
@@ -55,6 +55,36 @@ export function SidebarMenu() {
       name: "Justicia",
       icon: <Columns4 size={15} className="mr-2" />,
       href: "/justicia",
+    },
+    {
+      label: "Principios",
+      name: "Crítica",
+      icon: <CircleUser size={15} className="mr-2" />,
+      href: "/critica",
+    },
+    {
+      label: "Principios",
+      name: "Perdón",
+      icon: <User size={15} className="mr-2" />,
+      href: "/perdon",
+    },
+    {
+      label: "Principios",
+      name: "Confiar en Dios",
+      icon: <Book size={15} className="mr-2" />,
+      href: "/confiar",
+    },
+    {
+      label: "Principios",
+      name: "Integridad",
+      icon: <PersonStanding size={15} className="mr-2" />,
+      href: "/integridad",
+    },
+    {
+      label: "Principios",
+      name: "Empoderamiento",
+      icon: <Columns4 size={15} className="mr-2" />,
+      href: "/empoderamiento",
     },
   ];
 

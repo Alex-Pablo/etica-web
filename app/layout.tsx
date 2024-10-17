@@ -1,8 +1,8 @@
-
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { SidebarMenu } from "@/components/ui/sidebar";
+import { LayoutTransition } from "@/components/layout-transition";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,8 +34,14 @@ export default function RootLayout({
           <div className="hidden sm:block">
             <SidebarMenu />
           </div>
-          <main className="w-full p-4">
-            {children}
+          <main className="w-full px-4">
+            <LayoutTransition
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              {children}
+            </LayoutTransition>
           </main>
         </div>
       </body>
