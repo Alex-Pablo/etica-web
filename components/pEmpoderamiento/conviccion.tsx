@@ -1,10 +1,9 @@
-
 "use client"
 import { motion } from "framer-motion";
-export default function Validez() {
+export default function Conviccion() {
   return (
     <div className="mt-8 pl-4">
-      <h3 className="font-bold text-xl border-b-4 border-indigo-500 pb-2 pr-4 inline-block">Validez</h3>
+      <h3 className="font-bold text-xl border-b-4 border-indigo-500 pb-2 pr-4 inline-block">Convicción</h3>
 
       <motion.div className="block mt-6
                         w-full flex flex-col rounded-lg text-left 
@@ -12,9 +11,9 @@ export default function Validez() {
                         py-2 px-5">
         <span className="text-sm font-semibold text-gray-400">TEXTO BÍBLICO</span>
         <p className="text-base italic font-semibold">
-          Examinadlo todo; retened lo bueno.
+          Pero nosotros no somos de los que retroceden para perdición, sino de los que tienen fe para preservación del alma.
           <span className="text-base italic font-bold text-blue-600">
-            1 Tesalonicenses 5:21
+            Hebreos 10:39
           </span>
         </p>
       </motion.div>
@@ -22,7 +21,7 @@ export default function Validez() {
       <motion.div className="mt-6">
         <p className="font-medium">Definición</p>
         <p>
-          Cualidad de válido, conforme a las leyes o a la lógica.
+          Idea religiosa, ética o política a la que se está fuertemente adherido.
         </p>
       </motion.div>
 
@@ -33,11 +32,13 @@ export default function Validez() {
           Pensamientos para reflexionar
         </h6>
         <p className="italic pl-8 mt-2">
-          “Lamentablemente, nuestra crítica consiste en reprochar a los demás el no tener las cualidades que nosotros creemos tener.”
-          <span className="font-medium"> Jules Renard</span>
+          “Cuando se tiene principios claros, es fácil tomar decisiones.”
+        </p>
+        <p className="italic pl-8 mt-2">
+          “Hacer lo correcto, a cualquier costo, es más importante que ganar a toda costa.”
+          <span className="font-medium">Steve Wilstein</span>
         </p>
       </motion.div>
-
     </div>
   );
 }

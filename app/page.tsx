@@ -56,11 +56,11 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="block w-full flex flex-col rounded-lg text-left text-surface shadow-secondary-1  bg-teal-500/7 shadow-lg shadow-teal-600/10 py-1 px-5 mt-3">
             <h5 className="mb-1 text-xl font-medium leading-tight text-slate-700">
-              Ediwn
+              Edwin Felipe Alvarez Hernández
             </h5>
             <h6
               className="mb-2 text-base font-medium leading-tight text-surface/75 dark:text-neutral-300">
-              1223 4234 -4234
+              2290-20-22883
             </h6>
           </motion.div>
 
@@ -71,11 +71,11 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="block w-full flex flex-col rounded-lg text-left text-surface shadow-secondary-1  bg-emerald-500/4 shadow-lg shadow-emerald-600/20 py-1 px-5 mt-3">
             <h5 className="mb-1 text-xl font-medium leading-tight text-slate-700">
-              Royer
+              Royer Alexander Santos Tzep
             </h5>
             <h6
               className="mb-2 text-base font-medium leading-tight text-surface/75 dark:text-neutral-300">
-              1223 4234 -4234
+              2290-21-14323
             </h6>
           </motion.div>
 
@@ -86,11 +86,11 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="block w-full flex flex-col rounded-lg text-left text-surface shadow-secondary-1  bg-indigo-500/5 shadow-lg shadow-indigo-600/20 py-1 px-5 mt-3">
             <h5 className="mb-1 text-xl font-medium leading-tight text-slate-700">
-              Gela
+              Gela Karina Antonia Chumil Cosiguá
             </h5>
             <h6
               className="mb-2 text-base font-medium leading-tight text-surface/75 dark:text-neutral-300">
-              1223 4234 -4234
+              2290-20-13606
             </h6>
           </motion.div>
 
@@ -100,11 +100,11 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="block w-full flex flex-col rounded-lg text-left text-surface shadow-secondary-1  bg-rose-500/4 shadow-lg shadow-rose-600/10 py-1 px-5 mt-3">
             <h5 className="mb-1 text-xl font-medium leading-tight text-slate-700">
-              Jeniger
+              Jennifer Maria de los Angeles Cuy Quiché
             </h5>
             <h6
               className="mb-2 text-base font-medium leading-tight text-surface/75 dark:text-neutral-300">
-              1223 4234 -4234
+              2290-19-9654
             </h6>
           </motion.div>
 
@@ -118,8 +118,9 @@ export default function Home() {
             </h5>
             <h6
               className="mb-2 text-base font-medium leading-tight text-surface/75 dark:text-neutral-300">
-              1223 4234 -4234
+              2290-21-17936
             </h6>
+
           </motion.div>
         </div>
       </div>

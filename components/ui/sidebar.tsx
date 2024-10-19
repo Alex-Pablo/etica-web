@@ -83,7 +83,7 @@ export function SidebarMenu() {
     {
       label: "Principios",
       name: "Empoderamiento",
-      icon: <Columns4 size={15} className="mr-2" />,
+      icon: <PersonStanding size={15} className="mr-2" />,
       href: "/empoderamiento",
     },
   ];

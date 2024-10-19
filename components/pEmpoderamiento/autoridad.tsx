@@ -1,10 +1,9 @@
-
 "use client"
 import { motion } from "framer-motion";
-export default function Validez() {
+export default function Autoridad() {
   return (
     <div className="mt-8 pl-4">
-      <h3 className="font-bold text-xl border-b-4 border-indigo-500 pb-2 pr-4 inline-block">Validez</h3>
+      <h3 className="font-bold text-xl border-b-4 border-indigo-500 pb-2 pr-4 inline-block">Autoridad</h3>
 
       <motion.div className="block mt-6
                         w-full flex flex-col rounded-lg text-left 
@@ -12,9 +11,9 @@ export default function Validez() {
                         py-2 px-5">
         <span className="text-sm font-semibold text-gray-400">TEXTO BÍBLICO</span>
         <p className="text-base italic font-semibold">
-          Examinadlo todo; retened lo bueno.
+          Toda autoridad me ha sido dada en el cielo y en la tierra.
           <span className="text-base italic font-bold text-blue-600">
-            1 Tesalonicenses 5:21
+            Mateo 28:18
           </span>
         </p>
       </motion.div>
@@ -22,7 +21,7 @@ export default function Validez() {
       <motion.div className="mt-6">
         <p className="font-medium">Definición</p>
         <p>
-          Cualidad de válido, conforme a las leyes o a la lógica.
+          Poder que gobierna o ejerce el mando.
         </p>
       </motion.div>
 
@@ -33,11 +32,10 @@ export default function Validez() {
           Pensamientos para reflexionar
         </h6>
         <p className="italic pl-8 mt-2">
-          “Lamentablemente, nuestra crítica consiste en reprochar a los demás el no tener las cualidades que nosotros creemos tener.”
-          <span className="font-medium"> Jules Renard</span>
+          “La brújula es una excelente metáfora física de los principios porque siempre señala el norte. La clave, para mantener una elevada autoridad moral, es seguir continuamente unos principios de verdadero norte.”
+          <span className="font-medium">Stephen Covey</span>
         </p>
       </motion.div>
-
     </div>
   );
 }
